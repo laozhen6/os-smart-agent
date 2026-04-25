@@ -1,0 +1,32 @@
+# 操作系统智能代理配置文件
+#请输入你的api相关配置
+api:
+  base_url: "https://api.siliconflow.cn/v1"
+  model: "deepseek-ai/DeepSeek-V3.2"
+  api_key: "sk-uwjmbfnlpmyomsmttvodrlybpwjbzsvyieevyedmjvkrtmza"
+
+execution:
+  mode: "ssh"
+  timeout: 300
+#请输入你的ssh用户信息
+  ssh:
+    host: "192.168.100.128"
+    port: 22
+    username: "root"
+    password: "159357789A"
+    # 更推荐改用密钥登录。若使用密钥，请删除 password 并启用下面这一行：
+    # key_file: "C:/Users/你的用户名/.ssh/id_rsa"
+
+security:
+  enable_secondary_confirmation: true
+  max_command_timeout: 300
+  risk_operations:
+    high:
+      - "删除系统目录"
+      - "删除系统文件"
+      - "格式化磁盘"
+      - "修改关键配置"
+    medium:
+      - "删除文件"
+      - "修改配置"
+      - "用户权限变更"

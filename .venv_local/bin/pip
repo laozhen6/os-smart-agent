@@ -1,0 +1,8 @@
+#!/mnt/e/WeChat/xwechat_files/wxid_pisu04f4x8jn22_8a81/msg/file/2026-04/os-smart-agent(1)/.venv_local/bin/python
+# -*- coding: utf-8 -*-
+import re
+import sys
+from pip._internal.cli.main import main
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())

@@ -1,0 +1,6 @@
+#!/mnt/e/WeChat/xwechat_files/wxid_pisu04f4x8jn22_8a81/msg/file/2026-04/os-smart-agent(1)/.venv_local/bin/python
+import sys
+from invoke.main import program
+if __name__ == '__main__':
+    sys.argv[0] = sys.argv[0].removesuffix('.exe')
+    sys.exit(program.run())

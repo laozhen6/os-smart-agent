@@ -1,0 +1,38 @@
+# 示例配置文件 - 本地模式
+# 用于本地部署的配置示例
+
+api:
+  base_url: "https://api.siliconflow.cn/v1"
+  model: "glm-4.6v"
+  # API Key 将从环境变量 SILICONFLOW_API_KEY 读取
+
+execution:
+  mode: "local"  # 本地模式
+  timeout: 300   # 命令执行超时时间（秒）
+
+security:
+  enable_secondary_confirmation: true
+  max_command_timeout: 300
+
+# 示例配置文件 - SSH 远程模式
+# 用于远程控制的配置示例
+
+# api:
+#   base_url: "https://api.siliconflow.cn/v1"
+#   model: "glm-4.6v"
+#   # API Key 将从环境变量 SILICONFLOW_API_KEY 读取
+
+# execution:
+#   mode: "ssh"  # SSH 远程模式
+#   timeout: 300
+
+#   ssh:
+#     host: "192.168.1.100"  # 目标服务器地址
+#     port: 22             # SSH 端口
+#     username: "root"      # SSH 用户名
+#     # password: "your_password"  # SSH 密码（可选）
+#     # key_file: "/path/to/private/key"  # SSH 私钥文件路径（可选）
+
+# security:
+#   enable_secondary_confirmation: true
+#   max_command_timeout: 300
