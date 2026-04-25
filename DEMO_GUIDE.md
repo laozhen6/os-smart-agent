@@ -16,13 +16,13 @@
 如果项目在 Windows 路径：
 
 ```text
-E:\WeChat\xwechat_files\wxid_pisu04f4x8jn22_8a81\msg\file\2026-04\os-smart-agent
+E:\WeChat\os-smart-agent
 ```
 
 则在 WSL 中对应路径通常为：
 
 ```bash
-/mnt/e/WeChat/xwechat_files/wxid_pisu04f4x8jn22_8a81/msg/file/2026-04/os-smart-agent(1)
+/mnt/e/WeChat/os-smart-agent
 ```
 
 说明：
@@ -45,7 +45,10 @@ wsl
 ### 3.2 进入项目目录
 
 ```bash
-cd '/mnt/e/WeChat/xwechat_files/wxid_pisu04f4x8jn22_8a81/msg/file/2026-04/os-smart-agent(1)'
+cd '/mnt/你的文件夹位置
+若在E:\WeChat\os-smart-agent
+则应输入
+cd '/mnt/e/WeChat/os-smart-agent'
 ```
 
 ### 3.3 安装 Python 基础环境
@@ -85,7 +88,7 @@ pip install -r requirements.txt
 
 ```yaml
 api:
-  base_url: ""
+  base_url: "你的url"
   model: "你的model"
   api_key: "你的_SiliconFlow_API_Key"
 
